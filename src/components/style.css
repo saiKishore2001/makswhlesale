@@ -1,0 +1,46 @@
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-link {
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .pagination-link:hover {
+    background-color: #ddd;
+  }
+  
+  .disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .products {
+    height: 640px;
+    overflow-y: scroll;
+  }
+  
+  .products::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar width */
+}
+
+/* Optional: Customize scrollbar track and thumb if needed */
+.products::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Change the background color of the track */
+}
+
+.products::-webkit-scrollbar-thumb {
+    background-color: #888; /* Change the color of the thumb */
+}
